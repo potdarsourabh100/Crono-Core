@@ -1,5 +1,4 @@
-# Project Synopsis  
-## STM32 Multipurpose Clock
+# CronoCore - STM32 Multipurpose Clock
 
 ### 1. Introduction
 
