@@ -2,7 +2,7 @@
 
 ### 1. Introduction
 
-The **STM32 Multipurpose Clock** is a compact, battery-powered embedded system designed to combine multiple time-based utilities into a single, efficient device. Built around the **STM32F070F6P6** microcontroller, the project demonstrates how a feature-rich product can be implemented using a small, resource-constrained MCU through clean architecture and modular firmware design.
+The **STM32 Multipurpose Clock** is a compact, battery-powered embedded system designed to combine multiple time-based utilities into a single, efficient device. Built around the **STM32F030C8T6** microcontroller, the project demonstrates how a feature-rich product can be implemented using a small, resource-constrained MCU through clean architecture and modular firmware design.
 
 This project serves both as a **practical daily-use device** and as a **reference implementation** for embedded system design, covering real-time clocks, user interfaces, power management, and application-layer abstraction.
 
@@ -25,7 +25,7 @@ Modern embedded devices often integrate multiple functionalities while operating
 The system integrates the following functional blocks:
 
 - **Real-Time Clock (RTC):**  
-  A DS1307 RTC module provides accurate timekeeping independent of MCU power cycles.
+  A DS3231 RTC module provides accurate timekeeping independent of MCU power cycles.
 
 - **Display Unit:**  
   A TM1637-controlled 4-digit 7-segment display with a colon is used to present time, timers, and status information in a minimal yet readable format.
@@ -43,7 +43,7 @@ The system integrates the following functional blocks:
   The device is powered by two parallel 18650 Li-ion cells, charged via a TP4056 charging module and protected using a DW01 and FS8205A battery protection circuit. USB Type-C is used strictly for 5V power input and UART communication.
 
 - **Connectivity & Debugging:**  
-  A CH340G USB-to-UART converter enables firmware debugging, logging, and future firmware updates.
+  A CH340N USB-to-UART converter enables firmware debugging, logging, and future firmware updates.
 
 ---
 
